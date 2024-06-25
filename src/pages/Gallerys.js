@@ -24,7 +24,7 @@ const Gallerys = () => {
       "id": 1,
       "description": "Silica Sand is a versatile and high-quality material extensively used in various industries. Its unique properties make it an indispensable component in glass manufacturing, construction projects, and foundry processes. With its fine granular structure and high silica content, Silica Sand provides stability and strength to glass products, ensuring clarity and durability. In construction, Silica Sand is used in concrete and mortar mixes, offering excellent binding properties and enhancing the overall strength of structures. Moreover, in foundry processes, Silica Sand serves as a molding material due to its ability to withstand high temperatures and facilitate the production of intricate metal castings.",
       "name": "Project Name",
-      "type":'Bed',
+      "type":'Kicthen',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic
@@ -68,7 +68,7 @@ const Gallerys = () => {
     {
       "id": 6,
       "name": "Project 6",
-      "type":'Cabinet',
+      "type":'Closets',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic6,
@@ -95,7 +95,7 @@ const Gallerys = () => {
     {
       "id": 9,
       "name": "Project 9",
-      "type":'Dresser',
+      "type":'Kicthen Cabinet',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic9,
