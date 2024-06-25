@@ -2,17 +2,18 @@ import React, { useEffect } from "react";
 import { useParams,useLocation, NavLink  } from "react-router-dom";
 import PageIntro from "../components/cards/PageIntro";
 import styles from "./gallerydetail.module.css";
-import zimg from "../assets/contact.jpg";
-import zimg1 from "../assets/contact.jpg";
-import zimg2 from "../assets/contact.jpg";
-import zimg3 from "../assets/contact.jpg";
-import zimg4 from "../assets/contact.jpg";
+import zimg from "../assets/pics/1.jpg";
+import zimg1 from "../assets/pics/2.jpg";
+import zimg2 from "../assets/pics/3.jpg";
+import zimg3 from "../assets/pics/4.jpg";
+import zimg4 from "../assets/pics/5.jpg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { FaPlay } from 'react-icons/fa'
 import Title from "../components/title/Title";
+import video from "../assets/vids/1.mp4";
 
 const GalleryDetail = () => {
   const { id } = useParams();
@@ -35,7 +36,10 @@ const GalleryDetail = () => {
         <div className={styles.box}>
         <Title mainTitle={'Detail'} subTitle={""}/>
           <div className={styles.gallerybox}>
-            <div className={styles.vidbox}><div className={styles.playbox}><FaPlay/></div></div>
+            <div className={styles.vidbox}>
+            {/* <div className={styles.playbox}><FaPlay/></div> */}
+            <video className={styles.video} src={video} controls />
+            </div>
             <div className={styles.imgsbox}>
             <Swiper
             slidesPerView={1}

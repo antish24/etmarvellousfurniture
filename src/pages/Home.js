@@ -19,7 +19,7 @@ const Home = () => {
     <div className={styles.cont}>
       <div className={styles.videobox}>
         <video className={styles.video} src={video} autoPlay loop muted />
-        <div className={styles.logo}>
+        {/* <div className={styles.logo}>
           <div className={styles.infobox}>
             <span className={styles.moto2}><span className={styles.moto3}>Marvellous Furniture</span></span>
            <div>
@@ -34,7 +34,7 @@ const Home = () => {
           /></span>
            </div>
           </div>
-        </div>
+        </div> */}
         <div className={styles.bouncebox}>
           <span><FaAngleDown size={20}/></span>
         </div>

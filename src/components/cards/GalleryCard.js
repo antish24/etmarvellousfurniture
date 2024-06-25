@@ -11,10 +11,10 @@ const GalleryCard = (data) => {
         <div className={styles.topbox}>
           <img src={data.pic} alt='pic' className={styles.img}/>
           <div className={styles.info}>
-            <div className={styles.links}>
+            {/* <div className={styles.links}>
               <a href={data.link} target='_blank' rel='noreferrer'><FaLink className={styles.icons}/></a>
               <FaDownload className={styles.icons}/>
-            </div>
+            </div> */}
             <span className={styles.type}>{data.type}</span>
           </div>
         </div>

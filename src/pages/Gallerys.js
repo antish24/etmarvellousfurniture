@@ -3,13 +3,13 @@ import styles from "./gallery.module.css";
 import PageIntro from '../components/cards/PageIntro';
 import zimg from '../assets/gallery.jpg'
 import GalleryCard from '../components/cards/GalleryCard';
-import pic from '../assets/imgs/project1.png'
-import pic2 from '../assets/imgs/project2.png'
-import pic9 from '../assets/imgs/project9.png'
-import pic3 from '../assets/brands/siltet.jpg'
-import pic4 from '../assets/imgs/project3.png'
-import pic5 from '../assets/imgs/project5.png'
-import pic6 from '../assets/imgs/project4.png'
+import pic from '../assets/pics/1.jpg'
+import pic2 from '../assets/pics/2.jpg'
+import pic9 from '../assets/pics/3.jpg'
+import pic3 from '../assets/pics/1.jpg'
+import pic4 from '../assets/pics/4.jpg'
+import pic5 from '../assets/pics/5.jpg'
+import pic6 from '../assets/pics/6.jpg'
 import Title from '../components/title/Title';
 // import ModelShow from '../components/ModelShow';
 
@@ -23,8 +23,8 @@ const Gallerys = () => {
     {
       "id": 1,
       "description": "Silica Sand is a versatile and high-quality material extensively used in various industries. Its unique properties make it an indispensable component in glass manufacturing, construction projects, and foundry processes. With its fine granular structure and high silica content, Silica Sand provides stability and strength to glass products, ensuring clarity and durability. In construction, Silica Sand is used in concrete and mortar mixes, offering excellent binding properties and enhancing the overall strength of structures. Moreover, in foundry processes, Silica Sand serves as a molding material due to its ability to withstand high temperatures and facilitate the production of intricate metal castings.",
-      "name": "Zaahirah travels",
-      "type":'Website',
+      "name": "Project Name",
+      "type":'Bed',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic
@@ -32,7 +32,7 @@ const Gallerys = () => {
     {
       "id": 2,
       "name": "Project 3",
-      "type":'Production',
+      "type":'Bed',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic2,
@@ -41,7 +41,7 @@ const Gallerys = () => {
     {
       "id": 3,
       "name": "Project 4",
-      "type":'Graphics',
+      "type":'Cabinet',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic3,
@@ -50,7 +50,7 @@ const Gallerys = () => {
     {
       "id": 4,
       "name": "Project 1",
-      "type":'Website',
+      "type":'Cabinet',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic2,
@@ -59,7 +59,7 @@ const Gallerys = () => {
     {
       "id": 5,
       "name": "Project 5",
-      "type":'Graphics',
+      "type":'Cabinet',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic4,
@@ -68,7 +68,7 @@ const Gallerys = () => {
     {
       "id": 6,
       "name": "Project 6",
-      "type":'Graphics',
+      "type":'Cabinet',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic6,
@@ -77,7 +77,7 @@ const Gallerys = () => {
     {
       "id": 7,
       "name": "Project 7",
-      "type":'Promotion',
+      "type":'Dresser',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic5,
@@ -86,7 +86,7 @@ const Gallerys = () => {
     {
       "id": 8,
       "name": "Project 8",
-      "type":'Promotion',
+      "type":'Dresser',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic2,
@@ -95,7 +95,7 @@ const Gallerys = () => {
     {
       "id": 9,
       "name": "Project 9",
-      "type":'Website',
+      "type":'Dresser',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic9,
@@ -104,7 +104,7 @@ const Gallerys = () => {
     {
       "id":11,
       "name": "Project 11",
-      "type":'Production',
+      "type":'Dresser',
       "link":'https://www.zaahirahtravels.com',
       "file":'https://www.zaahirahtravels.com',
       "pic": pic3,
