@@ -33,7 +33,7 @@ const Contact = () => {
             <div className={styles.locationbox}>
             <div className={styles.location}><span className={styles.icons}><FaMapPin/></span><div className={styles.infobox}><span>Location:</span><span>Yeka City, Semit, NY 535022</span></div></div>
             <div className={styles.location}><span className={styles.icons}><FaMailBulk/></span><div className={styles.infobox}><span>Email:</span><span>MarvellousFurnitureet@gmail.com</span></div></div>
-              <div className={styles.location}><span className={styles.icons}><FaPhone/></span><div className={styles.infobox}><span>Call:</span><span>+251 9 12 71 68 68</span></div></div>
+              <div className={styles.location}><span className={styles.icons}><FaPhone/></span><div className={styles.infobox}><span>Call:</span><a href="tel:1234567" style={{color:'black',textDecoration:'none'}}>+251 9 12 71 68 68</a></div></div>
               <div className={styles.map}>
                 <MapComponent/>
               </div>
