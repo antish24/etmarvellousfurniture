@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink,useLocation  } from "react-router-dom";
 import styles from "./topnavbar.module.css";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logopng.png'
 import { RiMenu4Line } from "react-icons/ri";
 import { AiFillCloseCircle } from "react-icons/ai";
 

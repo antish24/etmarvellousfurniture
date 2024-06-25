@@ -16,7 +16,7 @@ const StaffReview = () => {
     {
       id:2,
       name:'John Doe',
-      role:'Graphics Designer',
+      role:'Assiastant',
       desc:'ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsa aspernatur architecto corporis odio!',
       facebook:'https://www.facebook.com',
       linkedin:'https://www.facebook.com',
@@ -26,7 +26,7 @@ const StaffReview = () => {
     {
       id:3,
       name:'John Doe',
-      role:'Web Developer',
+      role:'Sales',
       desc:'ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsa aspernatur architecto corporis odio!',
       facebook:'',
       linkedin:'',

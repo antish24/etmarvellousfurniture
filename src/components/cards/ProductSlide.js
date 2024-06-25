@@ -43,7 +43,7 @@ const ProductSlide = () => {
         },
         {
           "id": 5,
-          "name": "Posts",
+          "name": "Dinning",
           "description": "versatile and high-quality",
           "pic":pic5
         },

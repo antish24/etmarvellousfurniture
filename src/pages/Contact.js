@@ -31,9 +31,9 @@ const Contact = () => {
         <Title mainTitle={'Contact US'} subTitle={"You are always welcome to visit us and give us Feedbacks on our services."}/>
           <div className={styles.lists}>
             <div className={styles.locationbox}>
-            <div className={styles.location}><span className={styles.icons}><FaMapPin/></span><div className={styles.infobox}><span>Location:</span><span>A108 Adam Street, New York, NY 535022</span></div></div>
-            <div className={styles.location}><span className={styles.icons}><FaMailBulk/></span><div className={styles.infobox}><span>Email:</span><span>oureamil@gmail.com</span></div></div>
-              <div className={styles.location}><span className={styles.icons}><FaPhone/></span><div className={styles.infobox}><span>Call:</span><span>+251 9 11 75 50 25</span></div></div>
+            <div className={styles.location}><span className={styles.icons}><FaMapPin/></span><div className={styles.infobox}><span>Location:</span><span>Yeka City, Semit, NY 535022</span></div></div>
+            <div className={styles.location}><span className={styles.icons}><FaMailBulk/></span><div className={styles.infobox}><span>Email:</span><span>MarvellousFurnitureet@gmail.com</span></div></div>
+              <div className={styles.location}><span className={styles.icons}><FaPhone/></span><div className={styles.infobox}><span>Call:</span><span>+251 9 12 71 68 68</span></div></div>
               <div className={styles.map}>
                 <MapComponent/>
               </div>
