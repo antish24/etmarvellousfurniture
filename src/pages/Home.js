@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./home.module.css";
 import ProductShow from "../components/cards/ProductShow";
-import video from "../assets/bg.mp4";
+import video from "../assets/vids/1.mp4"
 import ServiceReview from "../components/cards/ServiceReview";
 import GalleryReview from "../components/cards/GalleryReview";
 import Testimonials from "../components/cards/Testimonials";

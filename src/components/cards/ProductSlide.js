@@ -19,25 +19,25 @@ const ProductSlide = () => {
     const galleryData=[
         {
           "id": 1,
-          "name": "Web Design",
+          "name": "Bed",
           "description": "versatile and high-quality",
           "pic":pic
         },
         {
           "id": 2,
-          "name": "Web Development",
+          "name": "Dresser",
           "description": "versatile and high-quality",
           "pic":pic3
         },
         {
           "id": 3,
-          "name": "Graphics Design",
+          "name": "Chair",
           "description": "versatile and high-quality",
           "pic":pic4
         },
         {
           "id": 4,
-          "name": "Social media",
+          "name": "Tables",
           "description": "versatile and high-quality",
           "pic":pic2
         },
@@ -49,13 +49,13 @@ const ProductSlide = () => {
         },
         {
           "id": 6,
-          "name": "Production",
+          "name": "Cabinets",
           "description": "versatile and high-quality",
           "pic":pic
         },
         {
           "id": 7,
-          "name": "Videos",
+          "name": "Closets",
           "description": "versatile and high-quality",
           "pic":pic6
         },
