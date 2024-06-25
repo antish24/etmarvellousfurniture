@@ -38,7 +38,7 @@ const TopNavBar = () => {
           {Links.map((link=><NavLink onClick={()=>{setShowMenu(false);scrollTop()}} style={{color:location.pathname===link.href?'var(--fcolor)':'rgba(0,0,0,.7)'}} key={link.id} to={link.href}>{link.name}</NavLink>))}
           <NavLink onClick={()=>{setShowMenu(false);scrollTop()}} className={styles.alinks} to={'/appointment'}>Appointment</NavLink>
         </div>
-        <div className={styles.menubox} onClick={()=>setShowMenu(true)}><RiMenu4Line color="white" size={25}/></div>
+        <div className={styles.menubox} onClick={()=>setShowMenu(true)}><RiMenu4Line size={25}/></div>
       </div>
     </div>
   );
