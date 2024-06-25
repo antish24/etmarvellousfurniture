@@ -3,12 +3,12 @@ import styles from "./service.module.css";
 import PageIntro from "../components/cards/PageIntro";
 import zimg from "../assets/gallery.jpg";
 import ProductCard from "../components/cards/ProductCard";
-import pic from '../assets/pics/1.jpg'
+import pic from '../assets/pics/1a.jpg'
 import pic4 from '../assets/pics/2.jpg'
 import pic3 from '../assets/pics/3.jpg'
 import pic2 from '../assets/pics/6.jpg'
-import pic5 from '../assets/pics/5.jpg'
-import pic6 from '../assets/pics/4.jpg'
+import pic5 from '../assets/pics/2b.jpg'
+import pic6 from '../assets/pics/2c.jpg'
 import ProductSlide from "../components/cards/ProductSlide";
 import Title from "../components/title/Title";
 

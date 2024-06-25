@@ -7,19 +7,19 @@ const WorkDash = () => {
         {
             id:1,
             icon:<FaCheck/>,
-            num:20,
+            num:37,
             desc:'Completed'
         },
         {
             id:2,
             icon:<FaHeart/>,
-            num:16,
+            num:26,
             desc:'Clients'
         },
         {
             id:3,
             icon:<FaCoffee/>,
-            num:57,
+            num:73,
             desc:'Cup of Coffee'
         },
     ]

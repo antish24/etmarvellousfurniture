@@ -3,8 +3,8 @@ import ProductCard from './ProductCard'
 import styles from './servicereview.module.css'
 import { NavLink } from 'react-router-dom'
 import pic from '../../assets/pics/1.jpg'
-import pic4 from '../../assets/pics/2.jpg'
-import pic5 from '../../assets/pics/3.jpg'
+import pic4 from '../../assets/pics/6.jpg'
+import pic5 from '../../assets/pics/3bb.jpg'
 import Title from '../title/Title'
 
 const ServiceReview = () => {
