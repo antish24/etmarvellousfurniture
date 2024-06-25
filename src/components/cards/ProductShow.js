@@ -36,19 +36,19 @@ const ProductShow = () => {
       id: 1,
       name: 'Who We Are',
       img:who,
-      description: "At Aklil Digital Realm, we are committed to empowering businesses to thrive in the digital landscape. Through our expertise in web development, social media management, and multimedia production, we enable companies to establish a formidable online presence. Beyond our professional services, we prioritize community welfare, ensuring that our work contributes positively to society.",
+      description: "At Marvellous Furniture, we are committed to empowering businesses to thrive in the digital landscape. Through our expertise in web development, social media management, and multimedia production, we enable companies to establish a formidable online presence. Beyond our professional services, we prioritize community welfare, ensuring that our work contributes positively to society.",
     },
     {
       id: 2,
       name: 'What we Do',
       img:what,
-      description: "At Aklil Digital Realm, we offer a diverse range of services to cater to your digital needs. Our expertise extends beyond web development, social media management, and multimedia production to include marketing services, graphic design, software development, web design, and software development. Whether you're seeking innovative marketing strategies, stunning graphic design, custom software solutions, or seamless web design, we have the skills and experience to bring your vision to life.",
+      description: "At Marvellous Furniture, we offer a diverse range of services to cater to your digital needs. Our expertise extends beyond web development, social media management, and multimedia production to include marketing services, graphic design, software development, web design, and software development. Whether you're seeking innovative marketing strategies, stunning graphic design, custom software solutions, or seamless web design, we have the skills and experience to bring your vision to life.",
     },
     {
       id: 3,
       name: 'Why Us',
       img:why,
-      description: "At Aklil Digital Realm, we stand apart by prioritizing your digital success above all else. Our dedication to delivering tailored solutions, staying ahead of industry trends, and consistently achieving results speaks volumes. When you choose us, you're choosing a partner committed to realizing your digital vision with unmatched creativity, expertise, and passion. Experience the difference Aklil Digital Realm can make for your online presence today.",
+      description: "At Marvellous Furniture, we stand apart by prioritizing your digital success above all else. Our dedication to delivering tailored solutions, staying ahead of industry trends, and consistently achieving results speaks volumes. When you choose us, you're choosing a partner committed to realizing your digital vision with unmatched creativity, expertise, and passion. Experience the difference Marvellous Furniture can make for your online presence today.",
     },
   ];
 

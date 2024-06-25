@@ -5,12 +5,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay,Navigation  } from 'swiper/modules';
 
-import pic from '../../assets/imgs/web.svg'
-import pic2 from '../../assets/imgs/subscription.png'
-import pic3 from '../../assets/imgs/web2.png'
-import pic4 from '../../assets/imgs/design2.png'
-import pic5 from '../../assets/imgs/social.png'
-import pic6 from '../../assets/imgs/video.png'
+import pic from '../../assets/pics/3bb.jpg'
+import pic2 from '../../assets/pics/2s.jpg'
+import pic3 from '../../assets/pics/3s.jpg'
+import pic4 from '../../assets/pics/1a.jpg'
+import pic5 from '../../assets/pics/1k.jpg'
+import pic6 from '../../assets/pics/3cc.jpg'
 
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 import Title from '../title/Title';
@@ -30,20 +30,14 @@ const ProductSlide = () => {
           "pic":pic3
         },
         {
-          "id": 3,
-          "name": "Chair",
-          "description": "versatile and high-quality",
-          "pic":pic4
-        },
-        {
           "id": 4,
-          "name": "Tables",
+          "name": "Shelf",
           "description": "versatile and high-quality",
           "pic":pic2
         },
         {
           "id": 5,
-          "name": "Dinning",
+          "name": "Kicthen",
           "description": "versatile and high-quality",
           "pic":pic5
         },
@@ -51,7 +45,7 @@ const ProductSlide = () => {
           "id": 6,
           "name": "Cabinets",
           "description": "versatile and high-quality",
-          "pic":pic
+          "pic":pic4
         },
         {
           "id": 7,
