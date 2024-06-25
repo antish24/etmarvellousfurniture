@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { NavLink,useLocation  } from "react-router-dom";
 import styles from "./topnavbar.module.css";
-import logo from '../../assets/imgs/logo.png'
+import logo from '../../assets/logo.png'
 import { RiMenu4Line } from "react-icons/ri";
 import { AiFillCloseCircle } from "react-icons/ai";
 
 const TopNavBar = () => {
 
   const Links=[
-    {id:1,href:'/',name:'Home'},
+    // {id:1,href:'/',name:'Home'},
     {id:2,href:'/about',name:'About Us'},
     {id:3,href:'/service',name:'Service'},
     {id:4,href:'/projects',name:'Projects'},
-    {id:5,href:'/blog',name:'Blog'},
+    // {id:5,href:'/blog',name:'Blog'},
     {id:6,href:'/contact',name:'Contact'},
   ]
 

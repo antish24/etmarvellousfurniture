@@ -5,17 +5,11 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: white;
+    background: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-}
-.cont{
-    background: rgba(255, 255, 255, 0.005);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(18.1px);
-    -webkit-backdrop-filter: blur(18.1px);
 }
 .gotop{
     position: fixed;
@@ -25,22 +19,6 @@
     padding: 10px;
     color: white;
     z-index: 10;
-}
-.fixedcont{
-    width: 100vw;
-    height: 70px;
-    position:fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background: rgba(255, 255, 255, 0.005);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(18.1px);
-    -webkit-backdrop-filter: blur(18.1px);
-    border: 1px solid rgba(255, 255, 255, 0.09);
 }
 .navbox{
     height: 50px;
