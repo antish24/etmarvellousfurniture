@@ -6,7 +6,7 @@ import Title from "../components/title/Title";
 
 const Appointment = () => {
   useEffect(() => {
-    document.title = 'Marvellous Furniture - Appointment';
+    document.title = ' Appointment';
   }, []);
 
   const [appSending,setappSending]=useState(false)

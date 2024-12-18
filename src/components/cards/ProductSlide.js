@@ -4,54 +4,67 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay,Navigation  } from 'swiper/modules';
+import { MdCameraswitch, MdSecurity } from "react-icons/md";
+import { IoMdAlarm } from "react-icons/io";
 
-import pic from '../../assets/pics/3bb.jpg'
-import pic2 from '../../assets/pics/2s.jpg'
-import pic3 from '../../assets/pics/3s.jpg'
-import pic4 from '../../assets/pics/1a.jpg'
-import pic5 from '../../assets/pics/1k.jpg'
-import pic6 from '../../assets/pics/3cc.jpg'
-
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
+import {FaBriefcase, FaCarAlt, FaChalkboardTeacher, FaCoins, FaShieldAlt, FaUsers } from 'react-icons/fa'
 import Title from '../title/Title';
 
 const ProductSlide = () => {
     const galleryData=[
         {
           "id": 1,
-          "name": "Bed",
-          "description": "versatile and high-quality",
-          "pic":pic
+          "name": "Static Guarding",
+          "description": "Trained and Experienced",
+          "pic":<FaShieldAlt size={70} color='white'/>
         },
         {
           "id": 2,
-          "name": "Dresser",
-          "description": "versatile and high-quality",
-          "pic":pic3
+          "name": "Alarm Response",
+          "description": "Available 24/7",
+          "pic":<IoMdAlarm size={70} color='white'/>
         },
         {
           "id": 4,
-          "name": "Shelf",
-          "description": "versatile and high-quality",
-          "pic":pic2
+          "name": "VIP Protection",
+          "description": "",
+          "pic":<MdSecurity size={70} color='white'/>
         },
         {
           "id": 5,
-          "name": "Kicthen",
-          "description": "versatile and high-quality",
-          "pic":pic5
+          "name": "Event Security",
+          "description": "For concert and programs",
+          "pic":<FaUsers size={70} color='white'/>
         },
         {
           "id": 6,
-          "name": "Cabinets",
-          "description": "versatile and high-quality",
-          "pic":pic4
+          "name": "Security Consultancy",
+          "description": "",
+          "pic":<FaBriefcase size={70} color='white'/>
         },
         {
           "id": 7,
-          "name": "Closets",
-          "description": "versatile and high-quality",
-          "pic":pic6
+          "name": "Mining Security",
+          "description": "",
+          "pic":<FaCoins size={70} color='white'/>
+        },
+        {
+          "id": 8,
+          "name": "Mobile Patrol",
+          "description": "",
+          "pic":<FaCarAlt size={70} color='white'/>
+        },
+        {
+          "id": 9,
+          "name": "Training",
+          "description": "",
+          "pic":<FaChalkboardTeacher size={70} color='white'/>
+        },
+        {
+          "id": 10,
+          "name": "CCTV Monitoring",
+          "description": "",
+          "pic":<MdCameraswitch size={70} color='white'/>
         },
       ]
       
@@ -113,7 +126,7 @@ const ProductSlide = () => {
               },
             }}
         autoplay={{
-          delay: 4500,
+          delay: 2500,
           disableOnInteraction: false,
         }}
             modules={[Autoplay,Navigation ]}
@@ -122,7 +135,8 @@ const ProductSlide = () => {
         {galleryData.map((l)=>(
             <SwiperSlide className={styles.slide} key={l.id} data-id={l.id}>
             <div className={middleItemId===l.id ?styles.activeitembox:styles.itembox} >
-                <img className={styles.itemimg} src={l.pic} alt={l.name}/>
+                {/* <Image width={120} height={120} src={l.pic} alt={l.name}/> */}
+                <span>{l.pic}</span>
                 <div className={styles.itemtxt}>
                     <span className={styles.itemtitle}>{l.name}</span>
                     <span className={styles.itemdes}>{l.description}</span>
@@ -131,10 +145,10 @@ const ProductSlide = () => {
             
         </SwiperSlide>
         ))}
-        <div className={styles.customNavigation}>
+        {/* <div className={styles.customNavigation}>
               <FaAngleLeft className={styles.navbtnl}/>
               <FaAngleRight className={styles.navbtnr}/>
-          </div>
+          </div> */}
       </Swiper>
 
           </div>

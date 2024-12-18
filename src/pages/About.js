@@ -15,7 +15,7 @@ import Title from "../components/title/Title";
 
 const About = () => {
   useEffect(() => {
-    document.title = "Marvellous Furniture - About Us";
+    document.title = " About Us";
   }, []);
 
   // const Awards=[

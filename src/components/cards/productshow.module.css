@@ -5,9 +5,10 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    background-image: url('../../../public/bg.jpg');
+    background-image: url('../../../public/bg3.jpg');
   background-attachment: fixed;
   background-size: cover;
+  overflow: hidden;
 }
 .cont{
     width: 90%;

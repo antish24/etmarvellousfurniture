@@ -2,12 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./contact.module.css";
 import PageIntro from "../components/cards/PageIntro";
 import zimg from '../assets/contact.jpg'
-import {FaMailBulk, FaMapPin, FaPhone } from 'react-icons/fa'
+import {FaMailBulk, FaMapPin, FaPhoneAlt } from 'react-icons/fa'
 import MapComponent from "../components/map/Map";
 import Title from "../components/title/Title";
+import Appointment from "./Apponitment";
 const Contact = () => {
   useEffect(() => {
-    document.title = 'Marvellous Furniture - Contact Us';
+    document.title = ' Contact Us';
   }, []);
 
   const [msgSending,setMsgSending]=useState(false)
@@ -32,12 +33,11 @@ const Contact = () => {
           <div className={styles.lists}>
             <div className={styles.locationbox}>
             <div className={styles.location}><span className={styles.icons}><FaMapPin/></span><div className={styles.infobox}><span>Location:</span><span>Yeka City, Semit, NY 535022</span></div></div>
-            <div className={styles.location}><span className={styles.icons}><FaMailBulk/></span><div className={styles.infobox}><span>Email:</span><span>MarvellousFurnitureet@gmail.com</span></div></div>
-              <div className={styles.location}><span className={styles.icons}><FaPhone/></span><div className={styles.infobox}><span>Call:</span><a href="tel:1234567" style={{color:'black',textDecoration:'none'}}>+251 9 12 71 68 68</a></div></div>
-              <div className={styles.map}>
-                <MapComponent/>
-              </div>
+            <div className={styles.location}><span className={styles.icons}><FaMailBulk/></span><div className={styles.infobox}><span>Email:</span><a href="mailto:info@gafatsecurityservice.com" style={{color:'black',textDecoration:'none'}}>info@gafatsecurityservice.com</a></div></div>
+            <div className={styles.location}><span className={styles.icons}><FaPhoneAlt/></span><div className={styles.infobox}><span>Phone:</span><a href="tel:1234567" style={{color:'black',textDecoration:'none'}}>+251 9 12 71 68 68</a></div></div>
+            <div className={styles.location}><span className={styles.icons}><FaPhoneAlt/></span><div className={styles.infobox}><span>Phone 2:</span><a href="tel:1234567" style={{color:'black',textDecoration:'none'}}>+251 9 12 71 68 68</a></div></div>
             </div>
+            
             <form ref={formRef} onSubmit={handelMsg} className={styles.formbox}>
               <div className={styles.inputcont}><span>Your Name</span><input maxLength={20} required minLength={5} type="text"/></div>
               <div className={styles.inputcont}><span>Your Email</span><input required type="email"/></div>
@@ -50,7 +50,11 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <div className={styles.map}>
+                <MapComponent/>
+              </div>
       </div>
+      <Appointment/>
     </>
   );
 };

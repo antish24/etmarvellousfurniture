@@ -13,17 +13,17 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0,.05);
+    background: var(--fcoloraa);
     transition:.3s ease-in-out;
     height: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
 }
 .zimg{
-    width: 85%;
-    height: 70%;
-    object-fit: contain;
-    scale: 1.2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .content{
     width: 55%;
@@ -39,16 +39,17 @@
 }
 .content:hover .title{
     scale: 1.1;
-    color: white;
 }
 .title{
     font-size: 23px;
     min-height: 40px;
     width: 80%;
+    color: white;
     font-family: 'CustomFont2';
     transition:.3s ease-in-out;
 }
 .detail{
+    color: white;
     height: 190px;
     width: 80%;
     white-space: wrap;

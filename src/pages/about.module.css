@@ -24,7 +24,7 @@
 .contlist{
     width: 90%;
     height: 90%;
-    background-color:  rgba(0,0,0,.8);
+    background-color:  var(--fcoloraa);
     backdrop-filter: blur(10px);
     display: flex;
     position: absolute;
@@ -35,7 +35,7 @@
 .contlist2{
     width: 90%;
     height: 90%;
-    background-color:  rgba(0,0,0,.8);
+    background-color:  var(--fcoloraa);
     backdrop-filter: blur(10px);
     display: flex;
     position: absolute;
@@ -70,7 +70,7 @@
 .awardscont{
     width: 100%;
     min-height: 200px;
-    background: rgba(0,0,0,.8);
+    background: var(--fcoloraa);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,7 +146,7 @@
     width: 100%;
     min-height: 200px;
     flex-wrap: wrap;
-    background: rgba(0,0,0,.8);
+    background: var(--fcoloraa);
     padding: 20px 0;
     display: flex;
     align-items: center;

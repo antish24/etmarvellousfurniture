@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./productcard.module.css";
 import { NavLink } from "react-router-dom";
 import { FaArrowRight } from 'react-icons/fa'
+import { Image } from "antd";
 const ProductCard = (data) => {
 
   const scrollTop=()=>{
@@ -10,7 +11,7 @@ const ProductCard = (data) => {
   
   return (
     <div className={styles.cont}>
-      <div className={styles.imgbox}><img className={styles.zimg} src={data.pic} alt={data.name}/></div>
+      <div className={styles.imgbox}><Image className={styles.zimg} src={data.pic} alt={data.name}/></div>
       <div className={styles.content}>
       <span className={styles.title}>{data.name}</span>
       <span className={styles.detail}>{data.description}</span>

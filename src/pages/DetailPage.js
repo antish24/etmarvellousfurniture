@@ -11,7 +11,7 @@ const DetailPage = () => {
   const data = location.state;
 
   useEffect(() => {
-    document.title = "Marvellous Furniture - Service Detail";
+    document.title = " Service Detail";
   }, []);
 
   return (

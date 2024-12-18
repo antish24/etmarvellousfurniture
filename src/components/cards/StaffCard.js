@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './staff.module.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import profilepic from '../../assets/imgs/4.jpg'
+import profilepic from '../../assets/awards/award.png'
 import { NavLink } from 'react-router-dom'
 const StaffCard = (l) => {
   return (

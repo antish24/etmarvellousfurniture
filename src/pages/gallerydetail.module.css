@@ -72,7 +72,7 @@
 .contlist{
     width: 100%;
     height: 90%;
-    background-color: rgba(0,0,0,.8);
+    background: var(--fcoloraa);
     backdrop-filter: blur(10px);
     display: flex;
     position: absolute;

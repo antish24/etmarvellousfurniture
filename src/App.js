@@ -1,38 +1,103 @@
-import React from 'react'
-import TopNavBar from './components/navbar/TopNavBar'
-import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Service from './pages/Service'
-import Contact from './pages/Contact'
-import Gallery from './pages/Gallerys'
-import About from './pages/About'
-import GoTop from './components/navbar/GoTop'
-import Footer from './components/footer/Footer'
-import Appointment from './pages/Apponitment'
-import DetailPage from './pages/DetailPage'
-import GalleryDetail from './pages/GalleryDetail'
-import Blog from './pages/Blog'
+import React, {useEffect, useState} from 'react';
+import TopNavBar from './components/navbar/TopNavBar';
+import {Route, Routes} from 'react-router-dom';
+import Home from './pages/Home';
+import Service from './pages/Service';
+import Contact from './pages/Contact';
+import About from './pages/About';
+import GoTop from './components/navbar/GoTop';
+import DetailPage from './pages/DetailPage';
+import GalleryDetail from './pages/GalleryDetail';
+import NewsPage from './pages/NewsPage';
+import TenderPage from './pages/TenderPage';
+import VacancyPage from './pages/VacancyPage';
+import AwardsPage from './pages/AwardsPage';
+import FooterPage from './components/footer/Footer';
+import {Spin} from 'antd';
+import {LoadingOutlined, Loading3QuartersOutlined} from '@ant-design/icons';
+import {SiQuantconnect} from 'react-icons/si';
+import TopNavBarContact from './components/navbar/TopNavBarContact';
+import Gallerys from './pages/Gallerys';
+import Appointment from './pages/Apponitment';
+import PageNotFound from './pages/PageNotFound';
 
 const App = () => {
+  const [loadingPage, setLoadingPage] = useState (true);
+
+  useEffect (() => {
+    const handleLoad = () => setLoadingPage (false);
+
+    window.addEventListener ('load', handleLoad);
+
+    return () => {
+      // Cleanup event listener
+      window.removeEventListener ('load', handleLoad);
+    };
+  }, []);
+
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        // When the tab is not visible (user switched tabs)
+        document.title = 'SECURE HR TECH'; // Change the title
+      } else {
+        // When the tab becomes visible again (user returns)
+        document.title = "WELCOME SECURE HR TECH"; // Revert to the original title
+      }
+    };
+
+    // Listen for visibility change event
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
 
   return (
     <div>
-      <TopNavBar/>
-      <Routes>
-      <Route element={<Home/>} path='/'/>
-      <Route element={<Service/>} path='/service'/>
-      <Route element={<About/>} path='/about'/>
-      <Route element={<Gallery/>} path='/projects'/>
-      <Route element={<Blog/>} path='/blog'/>
-      <Route element={<Contact/>} path='/contact'/>
-      <Route element={<Appointment/>} path='/appointment'/>
-      <Route element={<DetailPage/>} path='/service/:id'/>
-      <Route element={<GalleryDetail/>} path='/projects/:id'/>
-    </Routes>
-    <GoTop/>
-    <Footer/>
+      {loadingPage
+        ? <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '100vw',
+              height: '100vh',
+            }}
+          >
+            <Spin style={{color:'var(--fcolor)'}} indicator={<Loading3QuartersOutlined spin />} size="large">
+              <Spin style={{color:'var(--fcolor)'}} indicator={<LoadingOutlined spin />} size="default">
+                <Spin style={{color:'var(--fcolor)'}} indicator={<SiQuantconnect spin />} size="small" />
+              </Spin>
+            </Spin>
+          </div>
+        : <div>
+            <TopNavBarContact />
+            <TopNavBar />
+            <Routes>
+              <Route element={<Home />} path="/" />
+              <Route element={<Service />} path="/service" />
+              <Route element={<About />} path="/about" />
+              <Route element={<NewsPage />} path="/news" />
+              <Route element={<TenderPage />} path="/tender" />
+              <Route element={<VacancyPage />} path="/vacancy" />
+              <Route element={<Gallerys />} path="/projects" />
+              <Route element={<Appointment />} path="/appointment" />
+              <Route element={<PageNotFound />} path="*" />
+              <Route element={<AwardsPage />} path="/awards" />
+              <Route element={<Contact />} path="/contact" />
+              <Route element={<DetailPage />} path="/service/:id" />
+              <Route element={<GalleryDetail />} path="/projects/:id" />
+            </Routes>
+            <GoTop />
+            <FooterPage />
+          </div>}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

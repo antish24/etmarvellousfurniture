@@ -2,9 +2,9 @@ import React from 'react'
 import ProductCard from './ProductCard'
 import styles from './servicereview.module.css'
 import { NavLink } from 'react-router-dom'
-import pic from '../../assets/pics/1.jpg'
-import pic4 from '../../assets/pics/6.jpg'
-import pic5 from '../../assets/pics/3bb.jpg'
+import pic from '../../assets/services/static.png'
+import pic2 from '../../assets/services/event.png'
+import pic3 from '../../assets/services/vip.png'
 import Title from '../title/Title'
 
 const ServiceReview = () => {
@@ -15,20 +15,20 @@ const ServiceReview = () => {
   const servies = [
     {
       "id": 1,
-      "name": "Kitchen Cabinets",
+      "name": "Static Guarding",
       "pic": pic,
       "description": "em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
     {
       "id": 2,
-      "name": "Dresser",
-      "pic": pic4,
+      "name": "Mobile Patrol",
+      "pic": pic2,
       "description": "em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
     {
       "id": 3,
-      "name": "Bed",
-      "pic": pic5,
+      "name": "VIP Protection",
+      "pic": pic3,
       "description": "em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
   ];

@@ -3,15 +3,10 @@ import { useParams,useLocation, NavLink  } from "react-router-dom";
 import PageIntro from "../components/cards/PageIntro";
 import styles from "./gallerydetail.module.css";
 import zimg from "../assets/pics/1.jpg";
-import zimg1 from "../assets/pics/2.jpg";
-import zimg2 from "../assets/pics/3.jpg";
-import zimg3 from "../assets/pics/4.jpg";
-import zimg4 from "../assets/pics/5.jpg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
-import { FaPlay } from 'react-icons/fa'
 import Title from "../components/title/Title";
 import video from "../assets/vids/1.mp4";
 
@@ -21,7 +16,7 @@ const GalleryDetail = () => {
   const data = location.state;
 
   useEffect(() => {
-    document.title = "Marvellous Furniture - Project Detail";
+    document.title = " Project Detail";
   }, []);
 
 
@@ -55,10 +50,10 @@ const GalleryDetail = () => {
             modules={[Autoplay, Pagination]}
         className={styles.myswiper}
       >
-        <SwiperSlide className={styles.slide}><img className={styles.zimg} src={zimg1} alt="imge2"/></SwiperSlide>
-        <SwiperSlide className={styles.slide}><img className={styles.zimg} src={zimg2} alt="imge2"/></SwiperSlide>
-        <SwiperSlide className={styles.slide}><img className={styles.zimg} src={zimg3} alt="imge2"/></SwiperSlide>
-        <SwiperSlide className={styles.slide}><img className={styles.zimg} src={zimg4} alt="imge2"/></SwiperSlide>
+        <SwiperSlide className={styles.slide}><img className={styles.zimg} src={data.pic} alt="imge2"/></SwiperSlide>
+        <SwiperSlide className={styles.slide}><img className={styles.zimg} src={data.pic} alt="imge2"/></SwiperSlide>
+        <SwiperSlide className={styles.slide}><img className={styles.zimg} src={data.pic} alt="imge2"/></SwiperSlide>
+        <SwiperSlide className={styles.slide}><img className={styles.zimg} src={data.pic} alt="imge2"/></SwiperSlide>
       </Swiper>
             </div>
           </div>

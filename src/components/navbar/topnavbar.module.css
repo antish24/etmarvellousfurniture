@@ -1,16 +1,12 @@
 .cont{
     width: 100vw;
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 100;
-
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 1);
 }
 .gotop{
     position: fixed;
@@ -23,29 +19,19 @@
 }
 .navbox{
     height: 50px;
-    width: 90%;
+    width: 100%;
+    background:var(--fcolora);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-.logobox{
-    width: max-content;
-    height:100%;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-.logo{
-    height:50px;
-    width: auto;
-    object-fit: contain;
-    scale: 1.1;
 }
 .linkbox{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
+    position: relative;
+    width:90%;
 }
 .linkbox a{
     text-decoration: none;
@@ -53,18 +39,19 @@
 }
 .alinks{
     border:2px solid var(--fcolor);
-    color: var(--fcolor);
     padding: 0;
     height: 35px;
     width: 150px;
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 0;
     justify-content: center;
     border-radius: 5px;
+    transition: all .5s;
 }
 .alinks:hover{
-    color: white;
-    background: var(--fcolor);
+    scale: 0.9;
 }
 .menulinkbox a{
     text-decoration: none;
@@ -78,6 +65,7 @@
 }
 .menubox{
     display: none;
+    color: white;
 }
 .closemenu{
     display: none;
@@ -85,7 +73,15 @@
 .menulinkbox{
     display: none;
 }
-@media(max-width:830px){
+.callbtn{
+    animation: bounce2 3s ease-out infinite;
+}
+@keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {transform: translateX(0);}
+      40% {transform: translateX(15px);}
+      60% {transform: translateX(1px);}
+    }
+@media(max-width:1050px){
     .menulinkbox{
         display: flex;
         align-items: center;

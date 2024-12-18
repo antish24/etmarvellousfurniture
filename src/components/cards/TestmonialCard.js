@@ -19,6 +19,7 @@ const TestmonialCard = (data) => {
                   {stars.map((l)=><FaStar key={l.id} color={l.id > data.rate ? 'gray':'var(--fcolor)'}/>)}
                 </span>
                 <span>{data.name}</span>
+                <span style={{fontSize:'12px'}}>{data.role}</span>
             </div>
         </div>
         <span className={styles.text}>{data.note}

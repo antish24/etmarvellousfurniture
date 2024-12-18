@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styles from "./productshow.module.css";
-import who from "../../assets/imgs/whomain.png";
-import what from "../../assets/imgs/whatmain.png";
-import why from "../../assets/imgs/whymain.png";
+import whopic from "../../assets/awards/award.png";
+import whatpic from "../../assets/imgs/whatmain.png";
+import whypic from "../../assets/imgs/whymain.png";
+import howpic from "../../assets/imgs/unique.png";
 
 import { FaDotCircle } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const ProductShow = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,8 +20,8 @@ const ProductShow = () => {
   useEffect(() => {
     setIsVisible(false);
     const interval = setInterval(() => {
-      setSelectedItem((prevItem) => (prevItem === 3 ? 1 : prevItem + 1));
-    }, 11000);
+      setSelectedItem((prevItem) => (prevItem === minerals.length ? 1 : prevItem + 1));
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 
@@ -27,7 +29,7 @@ const ProductShow = () => {
     setIsVisible(true);
     const timeout = setTimeout(() => {
       setIsVisible(false);
-    }, 10000);
+    }, 3000);
     return () => clearTimeout(timeout);
   }, [selectedItem]);
 
@@ -35,43 +37,40 @@ const ProductShow = () => {
     {
       id: 1,
       name: 'Who We Are',
-      img:who,
-      description: "At Marvellous Furniture, we are committed to empowering businesses to thrive in the digital landscape. Through our expertise in web development, social media management, and multimedia production, we enable companies to establish a formidable online presence. Beyond our professional services, we prioritize community welfare, ensuring that our work contributes positively to society.",
+      img:whopic,
+      description: "At Gafat, we're more than a service provider—we're your trusted partner in security, HR solutions, and cleaning services. With 14+ years of experience and a focus on excellence, we empower businesses and individuals with reliable, efficient, and innovative solutions. Built on values of integrity, professionalism, and customer focus, every interaction with us adds value to your operations.",
     },
     {
       id: 2,
       name: 'What we Do',
-      img:what,
-      description: "At Marvellous Furniture, we offer a diverse range of services to cater to your digital needs. Our expertise extends beyond web development, social media management, and multimedia production to include marketing services, graphic design, software development, web design, and software development. Whether you're seeking innovative marketing strategies, stunning graphic design, custom software solutions, or seamless web design, we have the skills and experience to bring your vision to life.",
+      img:whatpic,
+      description: "We offer tailored solutions for safeguarding your property, managing your workforce, and maintaining spotless environments. Our services include: Security Services: Trained professionals ensuring safety. Human Resource Management: Recruitment, payroll, and compliance made easy. Cleaning Services: Thorough, reliable cleaning for commercial and residential spaces. With expertise and technology, we help you focus on achieving your goals.",
     },
     {
       id: 3,
       name: 'Why Us',
-      img:why,
-      description: "At Marvellous Furniture, we stand apart by prioritizing your digital success above all else. Our dedication to delivering tailored solutions, staying ahead of industry trends, and consistently achieving results speaks volumes. When you choose us, you're choosing a partner committed to realizing your digital vision with unmatched creativity, expertise, and passion. Experience the difference Marvellous Furniture can make for your online presence today.",
+      img:whypic,
+      description: "we deliver trust, quality, and results. Our client-first approach ensures personalized solutions, supported by certified professionals and innovative strategies, making us a reliable partner committed to your success.",
+    },
+    {
+      id: 4,
+      name: "How We're Different",
+      img:howpic,
+      description: "We prioritize your satisfaction with tailored services, proactive strategies, and consistent results. Whether it’s security, HR, or cleaning, we offer professional, efficient solutions that meet the highest standards, ensuring your peace of mind.",
     },
   ];
 
-  const products=[
-    {id:1,rol:<FaDotCircle/>},
-    {id:2,rol:<FaDotCircle/>},
-    {id:3,rol:<FaDotCircle/>},
-]
   return (
     <div className={styles.box}>
       <div className={styles.cont}>
       <div className={styles.slider}>
-        <div className={styles.lines}>{products.map(l=><span key={l.id} style={{background:selectedItem >= l.id?'var(--fcolor)':'transparent'}} className={styles.line}></span>)}</div>
-        {/* <div className={styles.nums}>{products.map(l=><span key={l.id} style={{background:selectedItem===l.id?'var(--fcolor)':'transparent',color:selectedItem===l.id?'white':'var(--fcolor)'}}  className={styles.rolnum}>{l.rol}</span>)}</div> */}
-        <div className={styles.nums}>{products.map(l=><span key={l.id} style={{background:selectedItem===l.id?'var(--fcolor)':'transparent',color:selectedItem===l.id?'white':'var(--fcolor)'}} onClick={()=>setSelectedItem(l.id)} className={styles.rolnum}>{l.rol}</span>)}</div>
+        <div className={styles.lines}>{minerals.map(l=><span key={l.id} style={{background:selectedItem >= l.id?'var(--fcolor)':'transparent'}} className={styles.line}></span>)}</div>
+        <div className={styles.nums}>{minerals.map(l=><span key={l.id} style={{background:selectedItem===l.id?'var(--fcolor)':'transparent',color:selectedItem===l.id?'white':'var(--fcolor)'}} onClick={()=>setSelectedItem(l.id)} className={styles.rolnum}><FaDotCircle/></span>)}</div>
       </div>
       <div className={styles.contentbox}>
       <div className={styles.content}>
         <span className={isVisible ? styles.title:styles.hiddentitle}>{minerals.find((mineral) => mineral.id === selectedItem).name}</span>
         <span className={isVisible ? styles.description : styles.hiddendes}>{minerals.find((mineral) => mineral.id === selectedItem).description}</span>
-        {/* <div className={styles.orderbtnbox}>
-          <NavLink className={isVisible ? styles.orderbtn:styles.hiddenorderbtn}>Order Now</NavLink>
-        </div> */}
       </div>
       <div className={styles.imgs}><img className={isVisible ? styles.showimg:styles.hideimg} src={minerals.find((mineral) => mineral.id === selectedItem).img} alt="mineral"/></div>
       </div>

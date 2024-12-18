@@ -13,68 +13,79 @@ import Title from '../title/Title';
 
 const Testimonials = () => {
 
-  const testimonialsData=[
+  const testimonialsData = [
     {
-      "id": 1,
-      "name": "John Smith",
-      "rate": 4,
-      "note":"em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
+      id: 1,
+      name: "Abebe Bekele",
+      role: "Ethiopian Security and Cleaning Services",
+      rate: 4,
+      note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
     {
-      "id": 2,
-      "name": "Sarah Johnson",
-      "rate": 5,
-      "note":"em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
+      id: 2,
+      name: "Liyu Mulugeta",
+      role: "Addis Ababa Security Solutions",
+      rate: 5,
+      note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
     {
-      "id": 3,
-      "name": "Michael Thompson",
-      "rate": 2,
-      "note":"em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
+      id: 3,
+      name: "Tesfaye Alemu",
+      role: "Zemen Cleaning Services",
+      rate: 2,
+      note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
     {
-      "id": 4,
-      "name": "Emily Wilson",
-      "rate": 5,
-      "note":"em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
+      id: 4,
+      name: "Mekdes Tadesse",
+      role: "Unity Facility Management",
+      rate: 5,
+      note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
     {
-      "id": 5,
-      "name": "Daniel Lee",
-      "rate": 4.5,
-      "note":"em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
+      id: 5,
+      name: "Kebede Teshome",
+      role: "Alem Security Services",
+      rate: 4.5,
+      note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
     {
-      "id": 6,
-      "name": "Sophia Rodriguez",
-      "rate": 3,
-      "note":"em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
+      id: 6,
+      name: "Hanna Girma",
+      role: "Ethio Clean & Secure",
+      rate: 3,
+      note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
     {
-      "id": 7,
-      "name": "David Chen",
-      "rate": 5,
-      "note":"em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
+      id: 7,
+      name: "Dereje Wolde",
+      role: "Bright Guard Ethiopia",
+      rate: 5,
+      note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
     {
-      "id": 8,
-      "name": "Olivia Brown",
-      "rate": 4.5,
-      "note":"em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
+      id: 8,
+      name: "Sisay Worku",
+      role: "CleanCare Ethiopia",
+      rate: 4.5,
+      note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
     {
-      "id": 9,
-      "name": "Liam Wilson",
-      "rate": 4,
-      "note":"em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
+      id: 9,
+      name: "Meseret Fekadu",
+      role: "Shield Security Services",
+      rate: 4,
+      note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
     },
     {
-      "id": 10,
-      "name": "Ava Thompson",
-      "rate": 3,
-      "note":"em, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi liem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiiem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiibero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
-    },
-  ]
+      id: 10,
+      name: "Biruk Asfaw",
+      role: "Zenith Cleaning and Guarding",
+      rate: 3,
+      note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sequi libero in blanditiis eveniet ipsa aspernatur architecto corporis odio!"
+    }
+  ];
+  
   
   return (
     <div className={styles.cont}>

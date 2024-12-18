@@ -3,137 +3,94 @@ import styles from "./gallery.module.css";
 import PageIntro from '../components/cards/PageIntro';
 import zimg from '../assets/gallery.jpg'
 import GalleryCard from '../components/cards/GalleryCard';
-import pic from '../assets/pics/1.jpg'
-import pic2 from '../assets/pics/1b.jpg'
-import pic7 from '../assets/pics/1aa.jpg'
-import pic8 from '../assets/pics/4b.jpg'
-import pic10 from '../assets/pics/3bb.jpg'
-import pic11 from '../assets/pics/1s.jpg'
-import pic12 from '../assets/pics/3s.jpg'
-import pic9 from '../assets/pics/3.jpg'
-import pic3 from '../assets/pics/1a.jpg'
-import pic4 from '../assets/pics/5.jpg'
-import pic5 from '../assets/pics/2k.jpg'
-import pic6 from '../assets/pics/3c.jpg'
+import pic from '../assets/pics/enat.png'
+import pic2 from '../assets/pics/abay.png'
+import pic3 from '../assets/pics/trainng.png'
+
 import Title from '../components/title/Title';
 // import ModelShow from '../components/ModelShow';
 
 const Gallerys = () => {
 
   useEffect(() => {
-    document.title = 'Marvellous Furniture - Projects';
+    document.title = ' Projects';
   }, []);
 
-  const galleryData=[
+  const galleryData = [
     {
-      "id": 1,
-      "description": "Silica Sand is a versatile and high-quality material extensively used in various industries. Its unique properties make it an indispensable component in glass manufacturing, construction projects, and foundry processes. With its fine granular structure and high silica content, Silica Sand provides stability and strength to glass products, ensuring clarity and durability. In construction, Silica Sand is used in concrete and mortar mixes, offering excellent binding properties and enhancing the overall strength of structures. Moreover, in foundry processes, Silica Sand serves as a molding material due to its ability to withstand high temperatures and facilitate the production of intricate metal castings.",
-      "name": "Kicthen Cabinet",
-      "type":'Kicthen',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic
+      id: 1,
+      name: "Enat Bank",
+      type: "Security",
+      link: "https://www.enatbank.com",
+      file: "https://www.enatbank.com",
+      pic: pic,
+      description: "We provide comprehensive security solutions for Enat Bank, ensuring the safety of customer data and financial transactions. Our advanced systems, including real-time fraud detection, data encryption, and 24/7 monitoring, help maintain a secure banking environment for all users."
     },
     {
-      "id": 2,
-      "name": "Project 2",
-      "type":'Bed',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic2,
-      "description": "Lithium is a vital element that plays a crucial role in powering modern technologies and driving the transition towards sustainable energy solutions. As a key component in rechargeable batteries, Lithium enables the efficient storage and release of electrical energy, making it essential for electric vehicles, portable electronics, and renewable energy storage systems. With its lightweight and high energy density properties, Lithium-ion batteries offer longer-lasting power and facilitate the shift to cleaner transportation and energy sources. The demand for Lithium continues to rise as the world embraces the need for greener, more sustainable energy alternatives, making it a valuable resource for the future."
+      id: 2,
+      name: "Abay Bank",
+      type: "Security",
+      link: "https://www.abaybank.com",
+      file: "https://www.abaybank.com",
+      pic: pic2,
+      description: "Our security services for Abay Bank focus on safeguarding their clients and assets. With state-of-the-art technology, we provide real-time fraud detection, data protection, and continuous surveillance to ensure the utmost security for all banking operations."
     },
     {
-      "id": 3,
-      "name": "Project 3",
-      "type":'Cabinet',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic3,
-      "description": "Tantalum is a rare and highly sought-after metal known for its exceptional properties and diverse applications. With its high melting point, excellent corrosion resistance, and remarkable electrical conductivity, Tantalum finds extensive use in the electronics industry. It is a key component in capacitors, which store and release electrical energy in various electronic devices, including smartphones, laptops, and medical implants. Tantalum's ability to withstand extreme temperatures and resist chemical reactions makes it an ideal choice for critical components in aerospace, defense, and industrial applications. Its unique combination of properties and scarcity contribute to Tantalum's value as a strategic material with broad-ranging technological importance."
+      id: 3,
+      name: "Oromia Bank",
+      type: "Cleaning",
+      link: "https://www.oromiabank.com",
+      file: "https://www.oromiabank.com",
+      pic: pic3,
+      description: "We provide professional cleaning services to Oromia Bank, ensuring that their branches are clean, hygienic, and welcoming. Our services are tailored to meet the highest standards of sanitation, creating a safe and pleasant environment for both employees and customers."
     },
     {
-      "id": 4,
-      "name": "Project 4",
-      "type":'Kicthen',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic4,
-      "description": "Lithium is a vital element that plays a crucial role in powering modern technologies and driving the transition towards sustainable energy solutions. As a key component in rechargeable batteries, Lithium enables the efficient storage and release of electrical energy, making it essential for electric vehicles, portable electronics, and renewable energy storage systems. With its lightweight and high energy density properties, Lithium-ion batteries offer longer-lasting power and facilitate the shift to cleaner transportation and energy sources. The demand for Lithium continues to rise as the world embraces the need for greener, more sustainable energy alternatives, making it a valuable resource for the future."
+      id: 4,
+      name: "Tesdiy Bank",
+      type: "Mobile Patrol",
+      link: "https://www.tesdiybank.com",
+      file: "https://www.tesdiybank.com",
+      pic: pic,
+      description: "We offer mobile patrol services to Tesdiy Bank, ensuring round-the-clock security across their premises. Our trained personnel provide proactive monitoring and immediate response to any security threats, ensuring the safety of the bank’s assets and customers."
     },
     {
-      "id": 5,
-      "name": "Project 5",
-      "type":'Kicthen',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic5,
-      "description": "Tantalum is a rare and highly sought-after metal known for its exceptional properties and diverse applications. With its high melting point, excellent corrosion resistance, and remarkable electrical conductivity, Tantalum finds extensive use in the electronics industry. It is a key component in capacitors, which store and release electrical energy in various electronic devices, including smartphones, laptops, and medical implants. Tantalum's ability to withstand extreme temperatures and resist chemical reactions makes it an ideal choice for critical components in aerospace, defense, and industrial applications. Its unique combination of properties and scarcity contribute to Tantalum's value as a strategic material with broad-ranging technological importance."
+      id: 5,
+      name: "Al Nur Import Export",
+      type: "Event Security",
+      link: "https://www.alnurimportexport.com",
+      file: "https://www.alnurimportexport.com",
+      pic: pic,
+      description: "We provide event security services for Al Nur Import Export, ensuring the safety and smooth execution of their corporate events and exhibitions. Our team of professionals coordinates security measures to protect participants and assets, providing peace of mind throughout the event."
     },
     {
-      "id": 6,
-      "name": "Project 6",
-      "type":'Closets',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic6,
-      "description": "Lithium is a vital element that plays a crucial role in powering modern technologies and driving the transition towards sustainable energy solutions. As a key component in rechargeable batteries, Lithium enables the efficient storage and release of electrical energy, making it essential for electric vehicles, portable electronics, and renewable energy storage systems. With its lightweight and high energy density properties, Lithium-ion batteries offer longer-lasting power and facilitate the shift to cleaner transportation and energy sources. The demand for Lithium continues to rise as the world embraces the need for greener, more sustainable energy alternatives, making it a valuable resource for the future."
+      id: 6,
+      name: "Romel General Trading",
+      type: "VIP Protection",
+      link: "https://www.romelgeneraltrading.com",
+      file: "https://www.romelgeneraltrading.com",
+      pic: pic,
+      description: "We offer VIP protection services to Romel General Trading, ensuring the safety and privacy of their high-profile clients. Our team of discreet and highly trained personnel provides tailored security solutions for executives, dignitaries, and celebrities."
     },
     {
-      "id": 7,
-      "name": "Project 7",
-      "type":'Dresser',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic7,
-      "description": "Tantalum is a rare and highly sought-after metal known for its exceptional properties and diverse applications. With its high melting point, excellent corrosion resistance, and remarkable electrical conductivity, Tantalum finds extensive use in the electronics industry. It is a key component in capacitors, which store and release electrical energy in various electronic devices, including smartphones, laptops, and medical implants. Tantalum's ability to withstand extreme temperatures and resist chemical reactions makes it an ideal choice for critical components in aerospace, defense, and industrial applications. Its unique combination of properties and scarcity contribute to Tantalum's value as a strategic material with broad-ranging technological importance."
+      id: 7,
+      name: "WUSC",
+      type: "Cleaning",
+      link: "https://www.wusc.com",
+      file: "https://www.wusc.com",
+      pic: pic,
+      description: "We provide expert cleaning services for WUSC, ensuring their facilities are maintained to the highest standards of cleanliness and sanitation. Our services create a safe, healthy, and productive environment for employees and visitors alike."
     },
     {
-      "id": 8,
-      "name": "Project 8",
-      "type":'Bed',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic8,
-      "description": "Lithium is a vital element that plays a crucial role in powering modern technologies and driving the transition towards sustainable energy solutions. As a key component in rechargeable batteries, Lithium enables the efficient storage and release of electrical energy, making it essential for electric vehicles, portable electronics, and renewable energy storage systems. With its lightweight and high energy density properties, Lithium-ion batteries offer longer-lasting power and facilitate the shift to cleaner transportation and energy sources. The demand for Lithium continues to rise as the world embraces the need for greener, more sustainable energy alternatives, making it a valuable resource for the future."
-    },
-    {
-      "id": 9,
-      "name": "Project 9",
-      "type":'Kicthen Cabinet',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic9,
-      "description": "Tantalum is a rare and highly sought-after metal known for its exceptional properties and diverse applications. With its high melting point, excellent corrosion resistance, and remarkable electrical conductivity, Tantalum finds extensive use in the electronics industry. It is a key component in capacitors, which store and release electrical energy in various electronic devices, including smartphones, laptops, and medical implants. Tantalum's ability to withstand extreme temperatures and resist chemical reactions makes it an ideal choice for critical components in aerospace, defense, and industrial applications. Its unique combination of properties and scarcity contribute to Tantalum's value as a strategic material with broad-ranging technological importance."
-    },
-    {
-      "id":10,
-      "name": "Project 10",
-      "type":'Bed',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic10,
-      "description": "Tantalum is a rare and highly sought-after metal known for its exceptional properties and diverse applications. With its high melting point, excellent corrosion resistance, and remarkable electrical conductivity, Tantalum finds extensive use in the electronics industry. It is a key component in capacitors, which store and release electrical energy in various electronic devices, including smartphones, laptops, and medical implants. Tantalum's ability to withstand extreme temperatures and resist chemical reactions makes it an ideal choice for critical components in aerospace, defense, and industrial applications. Its unique combination of properties and scarcity contribute to Tantalum's value as a strategic material with broad-ranging technological importance."
-    },
-    {
-      "id":11,
-      "name": "Project 11",
-      "type":'Shelf',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic11,
-      "description": "Tantalum is a rare and highly sought-after metal known for its exceptional properties and diverse applications. With its high melting point, excellent corrosion resistance, and remarkable electrical conductivity, Tantalum finds extensive use in the electronics industry. It is a key component in capacitors, which store and release electrical energy in various electronic devices, including smartphones, laptops, and medical implants. Tantalum's ability to withstand extreme temperatures and resist chemical reactions makes it an ideal choice for critical components in aerospace, defense, and industrial applications. Its unique combination of properties and scarcity contribute to Tantalum's value as a strategic material with broad-ranging technological importance."
-    },
-    {
-      "id":12,
-      "name": "Project 11",
-      "type":'Shelf',
-      "link":'https://www.zaahirahtravels.com',
-      "file":'https://www.zaahirahtravels.com',
-      "pic": pic12,
-      "description": "Tantalum is a rare and highly sought-after metal known for its exceptional properties and diverse applications. With its high melting point, excellent corrosion resistance, and remarkable electrical conductivity, Tantalum finds extensive use in the electronics industry. It is a key component in capacitors, which store and release electrical energy in various electronic devices, including smartphones, laptops, and medical implants. Tantalum's ability to withstand extreme temperatures and resist chemical reactions makes it an ideal choice for critical components in aerospace, defense, and industrial applications. Its unique combination of properties and scarcity contribute to Tantalum's value as a strategic material with broad-ranging technological importance."
-    },
-  ]
+      id: 8,
+      name: "Lion Bank",
+      type: "Mobile Patrol",
+      link: "https://www.lionbank.com",
+      file: "https://www.lionbank.com",
+      pic: pic,
+      description: "We provide mobile patrol services to Lion Bank, ensuring their branches and assets are secured at all times. Our security teams offer visible deterrence and rapid response to potential threats, providing peace of mind to both customers and staff."
+    }
+  ];
+  
 
   const [filterType,setFilterType]=useState('')
   
