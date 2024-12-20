@@ -14,7 +14,6 @@ const TopNavBar = () => {
     {id:3,href:'/service',name:'Service'},
     {id:4,href:'/awards',name:'Awards'},
     {id:5,href:'/news',name:'News'},
-    {id:6,href:'/tender',name:'Tender'},
     {id:7,href:'/vacancy',name:'Vacancy'},
   ]
 
@@ -24,7 +23,6 @@ const TopNavBar = () => {
     {id:3,href:'/service',name:'Service'},
     {id:4,href:'/awards',name:'Awards'},
     {id:5,href:'/news',name:'News'},
-    {id:6,href:'/tender',name:'Tender'},
     {id:7,href:'/vacancy',name:'Vacancy'},
     {id:8,href:'/contact',name:'Contact'},
   ]
@@ -71,7 +69,7 @@ const TopNavBar = () => {
             color:location.pathname===link.href || ((location.pathname.startsWith(`/service`) && location.pathname.startsWith('/service')===link.href.startsWith('/service'))||(location.pathname.startsWith(`/projects`) && location.pathname.startsWith('/projects')===link.href.startsWith('/projects')))?'var(--fcolora)':'white',
             background:location.pathname===link.href || ((location.pathname.startsWith(`/service`) && location.pathname.startsWith('/service')===link.href.startsWith('/service'))||(location.pathname.startsWith(`/projects`) && location.pathname.startsWith('/projects')===link.href.startsWith('/projects')))?'white':'var(--fcolora)',padding:'3px 20px',borderRadius:'3px'
             }} key={link.id} to={link.href}>{link.name}</NavLink>))}
-          <NavLink onClick={()=>scrollTop()} style={{background:location.pathname==='/contact'?'white':'var(--fcolora)',color:location.pathname==='/contact'?'var(--fcolor)':'white',gap:'10px'}} className={styles.alinks} to={'/contact'}>Contact us<FaPhoneAlt className={styles.callbtn}/></NavLink>
+          <NavLink onClick={()=>scrollTop()} style={{background:location.pathname==='/contact'?'white':'var(--fcolora)',color:location.pathname==='/contact'?'var(--fcolor)':'white',gap:'10px'}} className={styles.alinks} to={'/contact'}>Get Started<FaPhoneAlt className={styles.callbtn}/></NavLink>
         </div>
         <div className={styles.menulinkbox} style={{top:showMenu?'0':'-120%'}}>
             <div className={styles.closemenu} onClick={()=>setShowMenu(false)}><AiFillCloseCircle size={30}/></div>

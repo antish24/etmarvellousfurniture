@@ -18,13 +18,16 @@ const Footer = () => {
     ]
 
     const links=[
+        {id:1,href:'/news',name:'Pricing'},
         {id:1,href:'/news',name:'News'},
         {id:2,href:'/faq',name:'FAQ'},
         {id:3,href:'/contact',name:'Contact Us'},
         {id:4,href:'/appointment',name:'Appointment'},
+        {id:4,href:'/appointment',name:'Doc'},
     ]
 
     const worklinks=[
+        {id:1,href:'/tender',name:'Sign in'},
         {id:1,href:'/tender',name:'Tender'},
         {id:2,href:'/vacancy',name:'Vacancy'},
     ]
@@ -40,7 +43,6 @@ const Footer = () => {
             <div className={styles.logobox}>
             <NavLink to={'/'} onClick={scrollTop} className={styles.logo}>
                 <img src={logo} alt='logo'/>
-                <h2>Taste Byte</h2>
             </NavLink>
             <div style={{display:'flex',justifyContent:'space-between',gap:'30px',flexWrap:'wrap'}}>
             <div className={styles.links}><span style={{fontSize:'20px',fontWeight:'bold',marginBottom:'5px'}}>Company</span>{companylinks.map(l=><NavLink onClick={scrollTop} key={l.id} to={l.href}>{l.name}</NavLink>)}</div>

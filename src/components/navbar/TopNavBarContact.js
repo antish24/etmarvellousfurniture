@@ -15,7 +15,6 @@ const TopNavBarContact = () => {
       <div className={styles.boxcont}>
         <NavLink className={styles.logobox} to="/" onClick={scrollTop}>
           <img className={styles.logo} src={logo} alt="logo" />
-          <span>Taste Byte</span>
         </NavLink>
         <div className={styles.location}>
           <FaMapMarkedAlt size={50}/>
