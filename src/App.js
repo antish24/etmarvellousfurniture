@@ -40,10 +40,10 @@ const App = () => {
     const handleVisibilityChange = () => {
       if (document.hidden) {
         // When the tab is not visible (user switched tabs)
-        document.title = 'SECURE HR TECH'; // Change the title
+        document.title = 'Taste Byte'; // Change the title
       } else {
         // When the tab becomes visible again (user returns)
-        document.title = "WELCOME SECURE HR TECH"; // Revert to the original title
+        document.title = "WELCOME Taste Byte"; // Revert to the original title
       }
     };
 

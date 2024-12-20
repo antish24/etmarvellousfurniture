@@ -15,9 +15,9 @@
 }
 
 :root{
-  --fcolor:rgb(31, 64, 161);
-  --fcolora:rgb(31, 64, 161);
-  --fcoloraa:rgba(31,94,161,.5);
+  --fcolor:rgb(0, 140, 255);
+  --fcolora:rgba(0, 140, 255,.7);
+  --fcoloraa:rgba(236,131,28,.7);
 }
 body {
   margin: 0;

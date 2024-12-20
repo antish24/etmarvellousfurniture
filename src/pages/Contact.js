@@ -33,7 +33,7 @@ const Contact = () => {
           <div className={styles.lists}>
             <div className={styles.locationbox}>
             <div className={styles.location}><span className={styles.icons}><FaMapPin/></span><div className={styles.infobox}><span>Location:</span><span>Yeka City, Semit, NY 535022</span></div></div>
-            <div className={styles.location}><span className={styles.icons}><FaMailBulk/></span><div className={styles.infobox}><span>Email:</span><a href="mailto:info@gafatsecurityservice.com" style={{color:'black',textDecoration:'none'}}>info@gafatsecurityservice.com</a></div></div>
+            <div className={styles.location}><span className={styles.icons}><FaMailBulk/></span><div className={styles.infobox}><span>Email:</span><a href="mailto:info@Taste Bytesecurityservice.com" style={{color:'black',textDecoration:'none'}}>info@Taste Bytesecurityservice.com</a></div></div>
             <div className={styles.location}><span className={styles.icons}><FaPhoneAlt/></span><div className={styles.infobox}><span>Phone:</span><a href="tel:1234567" style={{color:'black',textDecoration:'none'}}>+251 9 12 71 68 68</a></div></div>
             <div className={styles.location}><span className={styles.icons}><FaPhoneAlt/></span><div className={styles.infobox}><span>Phone 2:</span><a href="tel:1234567" style={{color:'black',textDecoration:'none'}}>+251 9 12 71 68 68</a></div></div>
             </div>

@@ -22,37 +22,37 @@ import {Autoplay} from 'swiper/modules';
 const slideData = [
   {
     image: pic,
-    alt: 'GAFAT SECURITY',
+    alt: 'Taste Byte',
     text: 'Our team is highly trained and dedicated to delivering reliable, customized security solutions.',
   },
   {
     image: pic7,
-    alt: 'GAFAT SECURITY',
+    alt: 'Taste Byte',
     text: 'Providing professional security personnel to ensure the safety of your business, events, and personnel.',
   },
   {
     image: pic2,
-    alt: 'GAFAT SECURITY',
+    alt: 'Taste Byte',
     text: 'With years of experience, we offer tailored security services that meet your specific needs. Our personnel are equipped with the latest tools and techniques to protect what matters most.',
   },
   {
     image: pic3,
-    alt: 'GAFAT SECURITY',
+    alt: 'Taste Byte',
     text: 'From mobile patrols to event protection, we offer flexible security packages designed for any situation. Trust us to keep your assets and people safe with our expert security solutions.',
   },
   {
     image: pic4,
-    alt: 'GAFAT SECURITY',
+    alt: 'Taste Byte',
     text: 'Our team of security professionals is trained to handle any threat with efficiency and discretion. We prioritize your safety and peace of mind, ensuring seamless protection around the clock.',
   },
   {
     image: pic5,
-    alt: 'GAFAT SECURITY',
+    alt: 'Taste Byte',
     text: 'We are committed to delivering exceptional security services that go beyond industry standards.',
   },
   {
     image: pic6,
-    alt: 'GAFAT SECURITY',
+    alt: 'Taste Byte',
     text: 'Our personnel are always prepared to provide the highest level of protection for your business, assets, and people.',
   },
 ];

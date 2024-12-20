@@ -15,12 +15,12 @@ const TopNavBarContact = () => {
       <div className={styles.boxcont}>
         <NavLink className={styles.logobox} to="/" onClick={scrollTop}>
           <img className={styles.logo} src={logo} alt="logo" />
-          <span>SECURE HR TECH</span>
+          <span>Taste Byte</span>
         </NavLink>
         <div className={styles.location}>
           <FaMapMarkedAlt size={50}/>
           <div>
-            <span>Megenagna ,Grace City Mall 8th Floor </span>
+            <span>Addis Ketema ,Abenem 8th Floor </span>
             <span>Addis Abeba, Ethiopia </span>
           </div>
         </div>

@@ -32,7 +32,7 @@ const WorkDash = () => {
     ]
   return (
     <div className={styles.cont}>
-          <Title mainTitle={'OVERVIEWS'} subTitle={"SECURE HR TECH in Numbers"}/>
+          <Title mainTitle={'OVERVIEWS'} subTitle={"Taste Byte in Numbers"}/>
         <div className={styles.list}>
         {Data.map((d,i)=><div key={i} className={styles.infobox}>
             <span className={styles.iconbox}>{d.icon}</span>

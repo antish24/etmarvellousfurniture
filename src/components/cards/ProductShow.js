@@ -38,7 +38,7 @@ const ProductShow = () => {
       id: 1,
       name: 'Who We Are',
       img:whopic,
-      description: "At Gafat, we're more than a service provider—we're your trusted partner in security, HR solutions, and cleaning services. With 14+ years of experience and a focus on excellence, we empower businesses and individuals with reliable, efficient, and innovative solutions. Built on values of integrity, professionalism, and customer focus, every interaction with us adds value to your operations.",
+      description: "At Taste Byte, we're more than a service provider—we're your trusted partner in security, HR solutions, and cleaning services. With 14+ years of experience and a focus on excellence, we empower businesses and individuals with reliable, efficient, and innovative solutions. Built on values of integrity, professionalism, and customer focus, every interaction with us adds value to your operations.",
     },
     {
       id: 2,

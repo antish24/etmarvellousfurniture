@@ -40,7 +40,7 @@ const Footer = () => {
             <div className={styles.logobox}>
             <NavLink to={'/'} onClick={scrollTop} className={styles.logo}>
                 <img src={logo} alt='logo'/>
-                <h2>Secure HR Tech</h2>
+                <h2>Taste Byte</h2>
             </NavLink>
             <div style={{display:'flex',justifyContent:'space-between',gap:'30px',flexWrap:'wrap'}}>
             <div className={styles.links}><span style={{fontSize:'20px',fontWeight:'bold',marginBottom:'5px'}}>Company</span>{companylinks.map(l=><NavLink onClick={scrollTop} key={l.id} to={l.href}>{l.name}</NavLink>)}</div>
@@ -52,7 +52,7 @@ const Footer = () => {
             
             </div>
             <div className={styles.content}>
-                <div className={styles.copyright}>&copy; {new Date().getFullYear()} SECURE HR TECH. </div>
+                <div className={styles.copyright}>&copy; {new Date().getFullYear()} Taste Byte. </div>
                 <div className={styles.social}>
                 <a href="https://www.facebook.com"><FaFacebook/></a>
                 <a href="https://www.facebook.com"><FaInstagram/></a>
